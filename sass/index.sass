@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2')
+
+html , body
+  margin : 0
+  padding: 0
+  height: 100%
+  width: 100%
+
+
+$black: #1a1a1a
+
+////////////////  ACCUEIL ///////////////
+.accueil
+  background-image: url('../BG.png')
+  background-repeat: no-repeat
+  background-position: center
+  height: 100%
+  width: 100%
+  color: white
+  font-family: 'Exo 2'
+
+  nav
+    display: flex
+    justify-content: flex-end
+    background: $black
+    height: 7%
+    ul
+      margin: 0
+      list-style: none
+      display: flex
+      justify-content: flex-end
+      width: 60%
+      font-size: 20px
+
+      li
+        margin: auto
+
+  .title
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 80%
+    h1
+      font-size: 90px
+      font-weight: semibold
+    p
+      font-size: 30px
+
+  .arrow
+    display: flex
+    justify-content: center
+  object
+    height: 70px
+  object:hover
+    color: black
+
+@media screen and (max-width: 700px)
+  .accueil
+    nav
+      font-size: 14px
+      ul
+        width: 100%
+        padding: 0
