@@ -24,9 +24,11 @@ html, body {
   justify-content: flex-end;
   background: #1a1a1a;
   height: 7%;
+  position: sticky;
+  top: 0px;
 }
 
-/* line 27, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 29, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil nav ul {
   margin: 0;
   list-style: none;
@@ -36,12 +38,12 @@ html, body {
   font-size: 20px;
 }
 
-/* line 35, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 37, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil nav ul li {
   margin: auto;
 }
 
-/* line 38, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 40, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil .title {
   display: flex;
   flex-direction: column;
@@ -50,43 +52,78 @@ html, body {
   height: 80%;
 }
 
-/* line 44, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 46, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil .title h1 {
   font-size: 90px;
   font-weight: semibold;
 }
 
-/* line 47, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 49, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil .title p {
   font-size: 30px;
 }
 
-/* line 50, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 52, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil .arrow {
   display: flex;
   justify-content: center;
 }
 
-/* line 53, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 55, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil object {
   height: 70px;
 }
 
-/* line 55, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 57, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil object:hover {
   color: black;
 }
 
 @media screen and (max-width: 700px) {
-  /* line 60, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+  /* line 62, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
   .accueil nav {
     font-size: 14px;
   }
-  /* line 62, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+  /* line 64, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
   .accueil nav ul {
     width: 100%;
     padding: 0;
   }
+}
+
+/* line 71, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.projets {
+  heigth: 100%;
+  background: radial-gradient(#081c4f, #1a1a1a);
+  font-family: 'Exo 2';
+  color: white;
+}
+
+/* line 76, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.projets h1 {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2em 0;
+  font-size: 50px;
+}
+
+/* line 82, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.projets #projets-type {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 85, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.projets #projets-type img {
+  height: 200px;
+  width: 218px;
+}
+
+/* line 88, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.projets #projets-type figcaption {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=../css/index.map */

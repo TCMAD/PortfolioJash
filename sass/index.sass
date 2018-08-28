@@ -6,7 +6,7 @@ html , body
   height: 100%
   width: 100%
 
-
+$blue: #081c4f
 $black: #1a1a1a
 
 ////////////////  ACCUEIL ///////////////
@@ -24,6 +24,8 @@ $black: #1a1a1a
     justify-content: flex-end
     background: $black
     height: 7%
+    position: sticky
+    top: 0px
     ul
       margin: 0
       list-style: none
@@ -62,3 +64,28 @@ $black: #1a1a1a
       ul
         width: 100%
         padding: 0
+
+
+////////////////// PROJETS ///////////////
+
+.projets
+  heigth : 100%
+  background: radial-gradient($blue,$black)
+  font-family: 'Exo 2'
+  color: white
+  h1
+    display: flex
+    justify-content: center
+    margin: 0 0 2em 0
+    font-size: 50px
+
+  #projets-type
+    display: flex
+    justify-content: space-around
+    img
+      height: 200px
+      width: 218px
+    figcaption
+      font-size: 35px
+      display: flex
+      justify-content: center
