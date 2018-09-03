@@ -5,6 +5,8 @@ html , body
   padding: 0
   height: 100%
   width: 100%
+  color: white
+  font-family: 'Exo 2'
 
 $blue: #081c4f
 $black: #1a1a1a
@@ -16,8 +18,7 @@ $black: #1a1a1a
   background-position: center
   height: 100%
   width: 100%
-  color: white
-  font-family: 'Exo 2'
+
 
   nav
     display: flex
@@ -67,17 +68,17 @@ $black: #1a1a1a
 
 
 ////////////////// PROJETS ///////////////
+h2
+  display: flex
+  justify-content: center
+  margin: 0 0 2em 0
+  font-size: 50px
 
 .projets
-  heigth : 100%
+  height : 100%
   background: radial-gradient($blue,$black)
   font-family: 'Exo 2'
   color: white
-  h1
-    display: flex
-    justify-content: center
-    margin: 0 0 2em 0
-    font-size: 50px
 
   #projets-type
     display: flex
@@ -89,3 +90,111 @@ $black: #1a1a1a
       font-size: 35px
       display: flex
       justify-content: center
+
+////////////////// Contact ///////////////
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700)
+
+$color1: #081C4F
+$color2: #1A1A1A
+$color3: white
+
+
+.contact
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    height: 20%
+    background-color: $color2
+    -webkit-font-smoothing: antialiased
+    font-size: 18px
+    h2
+      margin: auto
+.buttons
+    display: flex
+    width: 100%
+    justify-content: space-around
+    margin: 30px
+
+*, *:before, *:after
+    box-sizing: border-box
+
+
+.icon
+	display: inline-block
+	width: 1em
+	height: 1em
+	fill: currentColor
+
+
+.icon-paperplane
+    font-size: 1em
+    color: $color3
+    margin-left: 1px
+    margin-top: 5px
+
+
+.contact-button
+    position: relative
+    -webkit-perspective: 1000
+    -webkit-backface-visibility: hidden
+    -webkit-transform:translate3d(0,0,0)
+    color: $color3
+    text-decoration: none
+    text-transform: uppercase
+    font-family: 'Raleway', sans-serif
+    font-weight: 500
+    font-size: 1em
+    border: 2px solid $color3
+    border-radius: 4px
+    padding: 20px 60px 20px 60px
+    transition: 0.3s ease-in-out
+
+    span
+        text-transform: none
+        position: absolute
+        color: $color1
+        top: 20px
+        left: 35px
+        opacity: 0
+        transition: all 0s ease 0s
+        padding: auto
+
+    &:hover
+        transition: 0.3s ease-in-out
+        border: 2px solid $color3
+        border-radius: 50px
+        background-color: $color3
+
+        &>span
+            opacity: 1
+            transition: all 0.25s ease-in-out 0.1s
+
+
+        &:before
+            transition: 0.3s ease-in-out
+            background-color: $color1
+
+
+    &:before, &:after
+        content: ""
+        position: absolute
+        top: -14px
+        left: -12px
+        width: 100px // Changer la longuer de la barre
+        height: 25px
+
+    &:before
+        border: 2px solid $color1
+        background-color: $color2
+        transform: skew(-25deg)
+        transition: 0.3s ease-in-out
+
+
+    &:after
+        content: "Disponible"
+        font-size: 0.5em
+        top: -7px
+        left: 0px
+        color: $color3

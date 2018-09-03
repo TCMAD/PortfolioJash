@@ -1,24 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Exo+2");
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
 /* line 3, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
+  color: white;
+  font-family: 'Exo 2';
 }
 
-/* line 13, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 15, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil {
   background-image: url("../BG.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
   width: 100%;
-  color: white;
-  font-family: 'Exo 2';
 }
 
-/* line 22, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 23, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil nav {
   display: flex;
   justify-content: flex-end;
@@ -28,7 +29,7 @@ html, body {
   top: 0px;
 }
 
-/* line 29, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 30, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil nav ul {
   margin: 0;
   list-style: none;
@@ -38,12 +39,12 @@ html, body {
   font-size: 20px;
 }
 
-/* line 37, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 38, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil nav ul li {
   margin: auto;
 }
 
-/* line 40, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 41, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil .title {
   display: flex;
   flex-direction: column;
@@ -52,39 +53,39 @@ html, body {
   height: 80%;
 }
 
-/* line 46, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 47, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil .title h1 {
   font-size: 90px;
   font-weight: semibold;
 }
 
-/* line 49, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 50, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil .title p {
   font-size: 30px;
 }
 
-/* line 52, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 53, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil .arrow {
   display: flex;
   justify-content: center;
 }
 
-/* line 55, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 56, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil object {
   height: 70px;
 }
 
-/* line 57, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 58, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .accueil object:hover {
   color: black;
 }
 
 @media screen and (max-width: 700px) {
-  /* line 62, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+  /* line 63, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
   .accueil nav {
     font-size: 14px;
   }
-  /* line 64, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+  /* line 65, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
   .accueil nav ul {
     width: 100%;
     padding: 0;
@@ -92,38 +93,160 @@ html, body {
 }
 
 /* line 71, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
-.projets {
-  heigth: 100%;
-  background: radial-gradient(#081c4f, #1a1a1a);
-  font-family: 'Exo 2';
-  color: white;
-}
-
-/* line 76, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
-.projets h1 {
+h2 {
   display: flex;
   justify-content: center;
   margin: 0 0 2em 0;
   font-size: 50px;
 }
 
-/* line 82, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 77, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.projets {
+  height: 100%;
+  background: radial-gradient(#081c4f, #1a1a1a);
+  font-family: 'Exo 2';
+  color: white;
+}
+
+/* line 83, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .projets #projets-type {
   display: flex;
   justify-content: space-around;
 }
 
-/* line 85, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 86, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .projets #projets-type img {
   height: 200px;
   width: 218px;
 }
 
-/* line 88, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+/* line 89, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
 .projets #projets-type figcaption {
   font-size: 35px;
   display: flex;
   justify-content: center;
+}
+
+/* line 103, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 20%;
+  background-color: #1A1A1A;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+}
+
+/* line 112, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.contact h2 {
+  margin: auto;
+}
+
+/* line 114, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+/* line 120, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 124, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+/* line 131, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.icon-paperplane {
+  font-size: 1em;
+  color: white;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+
+/* line 138, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.contact-button {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 60px;
+  transition: 0.3s ease-in-out;
+}
+
+/* line 154, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.contact-button span {
+  text-transform: none;
+  position: absolute;
+  color: #081C4F;
+  top: 20px;
+  left: 35px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+  padding: auto;
+}
+
+/* line 164, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.contact-button:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+
+/* line 170, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.contact-button:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+
+/* line 175, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.contact-button:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #081C4F;
+}
+
+/* line 180, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.contact-button:before, .contact-button:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 100px;
+  height: 25px;
+}
+
+/* line 188, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.contact-button:before {
+  border: 2px solid #081C4F;
+  background-color: #1A1A1A;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+
+/* line 195, C:/Users/Thomas/Desktop/Projets/Jash/Programme/sass/index.sass */
+.contact-button:after {
+  content: "Disponible";
+  font-size: 0.5em;
+  top: -7px;
+  left: 0px;
+  color: white;
 }
 
 /*# sourceMappingURL=../css/index.map */
