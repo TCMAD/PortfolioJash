@@ -11,6 +11,24 @@ html , body
 $blue: #081c4f
 $black: #1a1a1a
 
+nav
+  display: flex
+  justify-content: flex-end
+  background: $black
+  height: 7%
+  position: sticky
+  top: 0px
+  ul
+    margin: 0
+    list-style: none
+    display: flex
+    justify-content: flex-end
+    width: 60%
+    font-size: 20px
+
+    li
+      margin: auto
+
 ////////////////  ACCUEIL ///////////////
 .accueil
   background-image: url('../BG.png')
@@ -18,25 +36,6 @@ $black: #1a1a1a
   background-position: center
   height: 100%
   width: 100%
-
-
-  nav
-    display: flex
-    justify-content: flex-end
-    background: $black
-    height: 7%
-    position: sticky
-    top: 0px
-    ul
-      margin: 0
-      list-style: none
-      display: flex
-      justify-content: flex-end
-      width: 60%
-      font-size: 20px
-
-      li
-        margin: auto
 
   .title
     display: flex
@@ -49,6 +48,7 @@ $black: #1a1a1a
       font-weight: semibold
     p
       font-size: 30px
+      text-align: center
 
   .arrow
     display: flex
@@ -59,7 +59,6 @@ $black: #1a1a1a
     color: black
 
 @media screen and (max-width: 700px)
-  .accueil
     nav
       font-size: 14px
       ul
